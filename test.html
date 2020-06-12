@@ -15,19 +15,14 @@
 </head>
 <body>
     <div class="p-5 h-screen max-w-3xl mx-auto flex flex-col sm:flex-row justify-center items-center">
-        <div id="twitch-embed"></div>
-
-    <!-- Load the Twitch embed script -->
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        channel: "romnus",
-        layout: 'video',
-        theme: 'dark',
-      });
-    </script>
+    <iframe
+        src="https://player.twitch.tv/?channel=romnus"
+        height="720"
+        width="1280"
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen="true">
+    </iframe>
     </div>
 </body>
 </html>
