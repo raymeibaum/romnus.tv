@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>ROMNUS.TV</title>
+    <meta property="og:title" content="ROMNUS.TV" />
+    <meta property="og:description" content="Romnus is an avid gamer and Twitch affiliate based in Boston, Massachusetts" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://romnus.tv" />
+    <meta property="og:image" content="https://www.gravatar.com/avatar/0c95e5440d41477b7bba427f431ac31b?s=2048" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="p-5 h-screen max-w-3xl mx-auto flex flex-col sm:flex-row justify-center items-center">
+        <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "romnus",
+      });
+    </script>
+    </div>
+</body>
+</html>
