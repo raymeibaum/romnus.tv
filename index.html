@@ -64,7 +64,6 @@
         .then(response => response.json())
         .then(data => {
             if (data.stream) {
-                console.log(data.stream.channel.status);
                 const liveContainer = document.getElementById('live-container');
                 const liveGame = document.getElementById('live-game');
                 const liveStatus = document.getElementById('live-status');
