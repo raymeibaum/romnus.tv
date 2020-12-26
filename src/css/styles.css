@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .font-title {
     font-family: 'Bungee', cursive;
